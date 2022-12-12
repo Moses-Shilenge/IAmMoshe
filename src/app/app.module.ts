@@ -1,3 +1,4 @@
+import { LayoutModule } from './layout/layout.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
@@ -23,9 +24,10 @@ import { IndexComponent } from "./pages/index/index.component";
 import { ProfilepageComponent } from "./pages/examples/profilepage/profilepage.component";
 import { RegisterpageComponent } from "./pages/examples/registerpage/registerpage.component";
 import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.component";
+import { BrowserModule } from '@angular/platform-browser';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
     // IndexComponent,
     // ProfilepageComponent,
     // RegisterpageComponent,
@@ -34,6 +36,7 @@ import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.c
   imports: [
     BrowserAnimationsModule,
     FormsModule,
+    BrowserModule,
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
@@ -42,7 +45,7 @@ import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.c
     // TooltipModule.forRoot(),
     // CollapseModule.forRoot(),
     // TabsModule.forRoot(),
-    PagesModule
+    LayoutModule
     // PaginationModule.forRoot(),
     // AlertModule.forRoot(),
     // BsDatepickerModule.forRoot(),

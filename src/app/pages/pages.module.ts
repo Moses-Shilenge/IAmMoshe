@@ -1,4 +1,3 @@
-import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
@@ -23,9 +22,14 @@ import { RegisterpageComponent } from "./examples/registerpage/registerpage.comp
 import { LandingpageComponent } from "./examples/landingpage/landingpage.component";
 
 @NgModule({
+  declarations: [
+    IndexComponent,
+    ProfilepageComponent,
+    RegisterpageComponent,
+    LandingpageComponent
+  ],
   imports: [
     CommonModule,
-    BrowserModule,
     FormsModule,
     RouterModule,
     BsDropdownModule.forRoot(),
@@ -40,12 +44,6 @@ import { LandingpageComponent } from "./examples/landingpage/landingpage.compone
     BsDatepickerModule.forRoot(),
     CarouselModule.forRoot(),
     ModalModule.forRoot()
-  ],
-  declarations: [
-    IndexComponent,
-    ProfilepageComponent,
-    RegisterpageComponent,
-    LandingpageComponent
   ],
   exports: [
     IndexComponent,
